@@ -31,5 +31,8 @@ public class math02
         }
         return (sum,product);
     }
+    public bool CompareTriple(int A, int B, int C){
+        return A<B && B<C;
+    }
 
 }
