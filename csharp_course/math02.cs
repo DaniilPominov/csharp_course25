@@ -21,5 +21,15 @@ public class math02
         }
         return 2*(a+b);
     }
+    public (int,int) integer1(int number){
+        int sum=0, product =1;
+        int sub = number;
+        while(sub!=0){
+            sum+=sub%10;
+            product*=sub%10;
+            sub/=10;
+        }
+        return (sum,product);
+    }
 
 }
