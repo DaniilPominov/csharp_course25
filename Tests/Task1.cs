@@ -1,5 +1,4 @@
 ﻿
-using Company.TestProject1;
 using csharp_course;
 using csharp_course.Exceptions;
 

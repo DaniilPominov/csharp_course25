@@ -1,7 +1,7 @@
 using csharp_course;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace Company.TestProject1;
+namespace Tests;
 
 [TestClass]
 public abstract class BaseMathTest
