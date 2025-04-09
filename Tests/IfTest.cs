@@ -7,9 +7,15 @@ public class IfTest:BaseMathTest
 {
 
     [TestMethod]
-    public void TestMethod1()
+    [DynamicData("generateTriple",DynamicDataSourceType.Method)]
+    public void TestMethod1(List<double> numbers)
     {
-        int A = 1,B = 2, C = 3;
+        (double A, double B, double C) = (numbers[0],numbers[1],numbers[2]);
         Assert.AreEqual(_math.MinimalFromTriple(A,B,C),A);
+    }
+    private static IEnumerable<object[]>  generateTriple(){
+        var random = new Random();
+        var rand = random.NextDouble();
+        yield return new object[]{new List<double>(){rand,rand+1,rand+2}};
     }
 }
