@@ -34,5 +34,11 @@ public class math02
     public bool CompareTriple(int A, int B, int C){
         return A<B && B<C;
     }
+    public double MinimalFromTriple(double A, double B, double C){
+
+        var numbers = new List<double>(){A,B,C};
+
+        return numbers.Min();
+    }
 
 }
