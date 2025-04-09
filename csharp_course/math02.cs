@@ -40,5 +40,15 @@ public class math02
 
         return numbers.Min();
     }
+    public int RootCount(double A, double B, double C){
+        var D = Math.Pow(B,2)-4*A*C;
+        if(D>0){
+            return 2;
+        }
+        else if(D<0){
+            return 0;
+        }
+        return 1;
+    }
 
 }

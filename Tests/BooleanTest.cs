@@ -1,6 +1,6 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace Company.TestProject1;
+namespace Tests;
 
 [TestClass]
 public class BooleanTest:BaseMathTest

@@ -1,6 +1,6 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace Company.TestProject1;
+namespace Tests;
 
 [TestClass]
 public class IfTest:BaseMathTest
@@ -8,7 +8,7 @@ public class IfTest:BaseMathTest
 
     [TestMethod]
     [DynamicData("generateTriple",DynamicDataSourceType.Method)]
-    public void TestMethod1(List<double> numbers)
+    public void TestIf(List<double> numbers)
     {
         (double A, double B, double C) = (numbers[0],numbers[1],numbers[2]);
         Assert.AreEqual(_math.MinimalFromTriple(A,B,C),A);
