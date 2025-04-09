@@ -3,15 +3,13 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 namespace Company.TestProject1;
 
 [TestClass]
-public class BooleanTest:BaseMathTest
+public class IfTest:BaseMathTest
 {
 
     [TestMethod]
     public void TestMethod1()
     {
         int A = 1,B = 2, C = 3;
-        var bob = new int[]{1,2,3};
-        bob.Where((a)=> a==A);
-        Assert.IsTrue(_math.CompareTriple(A,B,C));
+        Assert.AreEqual(_math.MinimalFromTriple(A,B,C),A);
     }
 }
