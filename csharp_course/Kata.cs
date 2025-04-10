@@ -37,8 +37,6 @@ public class Kata
             sb.Append(s%10);
         }
         sb.Append(transfer);
-        var A = BigInteger.Parse(a);
-        var B = BigInteger.Parse(b);
         var res = Reverse(sb.ToString());
         return res.TrimStart('0');
     }
