@@ -1,15 +1,20 @@
 ﻿using csharp_course;
 using NUnit.Framework;
+using System.Collections.Generic;
 using System;
 namespace KataTests;
 
 public class KataTests
 {
 
-
   [TestFixture]
   public class Sample_Test
   {
+    [Test]
+    public void Given123And456Returns579()
+    {
+        Assert.That(Kata.sumStrings("824","456"), Is.EqualTo("1280"));
+    }
     [Test, Description("Sample Tests")]
     public void Test()
     {
