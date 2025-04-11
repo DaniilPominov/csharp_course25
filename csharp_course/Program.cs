@@ -1,2 +1,4 @@
 ﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+using EvaEnjoynersGalaxyDestroyer;
+
+Console.WriteLine(Destroyer.Power(4.0,5.2));
